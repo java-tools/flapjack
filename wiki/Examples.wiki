@@ -1,0 +1,4 @@
+#labels Phase-Implementation,Featured
+== Some examples on how to use Flapjack to parse records for you. ==
+
+*Source Location:* [http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example GitHub]
