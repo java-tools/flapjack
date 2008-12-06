@@ -3,4 +3,4 @@
 
 *Source Location:* [http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example GitHub]
 
-[SameRecordExample Example of parsing data with the same record multiple times]
+[SameRecordExample Same Record Type]
