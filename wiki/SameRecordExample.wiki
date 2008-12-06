@@ -7,7 +7,7 @@
 || Username || 22 || 11 ||
 || Terminator || 33 || 1 ||
 
-The first thing I need to do is define my RecordLayout:
+The first thing I need to do is define my {{{RecordLayout}}}:
 {{{
     private static class UserRecordLayout extends SimpleRecordLayout {
         private UserRecordLayout() {
