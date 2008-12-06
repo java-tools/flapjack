@@ -4,6 +4,7 @@
   * Supports both fixed records and delimited record parsing
   * Sorting records after parsing has completed
   * Bad record error handling to allow continuous processing even if a bad record is encounted
+  * Able to write delimited and fixed length files
   * Also used by the [http://activemq.apache.org/camel/ Apache Camel] project
 
 [http://code.google.com/p/fixedformat4j/ FixedFormat4j]
