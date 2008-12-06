@@ -4,4 +4,5 @@
 *Source Location:* [http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example GitHub]
 
 [SameRecordExample Same Record Type]
+
 [MultipleRecordTypeExample Multiple Record Types]
