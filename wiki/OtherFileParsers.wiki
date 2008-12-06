@@ -22,7 +22,7 @@
   * A record may consist of one or more physical lines in the file
   * A flat file may contain more than one type of record
   * Is able to produce flat files from beans using the same definition file
-  * Conversion of many data types and pluggable data type conversion
+  * Conversion of many data types and pluggable data type conversion from String
 
 [http://jffp.sourceforge.net/ FFP]
   * Java 1.4 compliant
