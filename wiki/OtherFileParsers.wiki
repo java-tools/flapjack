@@ -16,9 +16,15 @@
   * Java 1.4 compliant
   * Configured through XML
   * Supports both fixed records and delimited record parsing
+  * Supports multi-record format files
   * A record may consist of one or more physical lines in the file
   * A flat file may contain more than one type of record
-  * Is able to produce flat files from beans and the same definition file
+  * Is able to produce flat files from beans using the same definition file
   * Conversion of many data types and pluggable data type conversion
 
 [http://jffp.sourceforge.net/ FFP]
+  * Supports fixed record parsing
+  * Supports multi-record format files
+  * Configured through code
+  * Event driven parsing
+ 
