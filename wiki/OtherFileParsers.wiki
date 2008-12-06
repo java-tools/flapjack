@@ -1,13 +1,15 @@
 #labels Featured
 [http://flatpack.sourceforge.net/ Flatpack]
   * Java 1.4 compliant
-  * Configured through XML
+  * Configured through XML or DB table
   * Supports both fixed records and delimited record parsing
   * Sorting records after parsing has completed
+  * Handles heading and trailing records
   * Bad record error handling to allow continuous processing even if a bad record is encounted
   * Able to write delimited and fixed length files
   * Conversion of many data types and pluggable data type conversion from String
   * Also used by the [http://activemq.apache.org/camel/ Apache Camel] project
+  * Complete [http://flatpack.sourceforge.net/features.html feature] set 
 
 [http://code.google.com/p/fixedformat4j/ FixedFormat4j]
   * Java 1.5 compliant
