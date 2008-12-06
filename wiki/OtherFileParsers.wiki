@@ -12,7 +12,7 @@
   * Java 1.5 compliant
   * Configured through annotations
   * Supports fixed record parsing
-  * Conversion of many data types and pluggable data type conversion
+  * Conversion of many data types and pluggable data type conversion from String
 
 [http://flatworm.sourceforge.net/ Flatworm]
   * Java 1.4 compliant
