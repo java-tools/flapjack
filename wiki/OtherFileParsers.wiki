@@ -1,3 +1,4 @@
+#labels Featured
 [http://flatpack.sourceforge.net/ Flatpack]
   * Java 1.4 compliant
   * Configured through XML
