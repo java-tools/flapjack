@@ -1,4 +1,9 @@
 [http://flatpack.sourceforge.net/ Flatpack]
+  * Java 1.4 compliant
+  * Configured through XML
+  * Supports both fixed records and delimited record parsing
+  * Sorting records after parsing has completed
+  * Bad record error handling to allow continuous processing even if a bad record is encounted
 
 [http://fixedformat4j.ancientprogramming.com/usage/index.html FixedFormat4j]
 
