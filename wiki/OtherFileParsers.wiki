@@ -23,6 +23,7 @@
   * Conversion of many data types and pluggable data type conversion
 
 [http://jffp.sourceforge.net/ FFP]
+  * Java 1.4 compliant
   * Supports fixed record parsing
   * Supports multi-record format files
   * Configured through code
