@@ -13,5 +13,12 @@
   * Conversion of many data types and pluggable data type conversion
 
 [http://flatworm.sourceforge.net/ Flatworm]
+  * Java 1.4 compliant
+  * Configured through XML
+  * Supports both fixed records and delimited record parsing
+  * A record may consist of one or more physical lines in the file
+  * A flat file may contain more than one type of record
+  * Is able to produce flat files from beans and the same definition file
+  * Conversion of many data types and pluggable data type conversion
 
 [http://jffp.sourceforge.net/ FFP]
