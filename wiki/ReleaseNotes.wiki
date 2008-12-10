@@ -1,1 +1,6 @@
 #labels Featured
+= 1.0.1 =
+Contains some bug fixes and has a new annotation module for all the 1.5 users out there.
+
+== 1.0.0 ==
+The initial release of Flapjack has been made!  Everyone give it a go and let me know what you think.  If you encounter any bugs, quirks, or much need features just go to the *Issues* and create an item.
