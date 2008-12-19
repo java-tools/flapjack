@@ -33,4 +33,7 @@
   * Supports multi-record format files
   * Configured through code
   * Event driven parsing
+
+[http://commons.apache.org/sandbox/flatfile/ FlatFile]
+  * Still under development
  
