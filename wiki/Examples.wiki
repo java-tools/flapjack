@@ -6,3 +6,5 @@
 [SameRecordExample Same Record Type]
 
 [MultipleRecordTypeExample Multiple Record Types]
+
+[AnnotationExample Using Annotations to map to your model object]
