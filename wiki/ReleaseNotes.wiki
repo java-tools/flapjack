@@ -1,5 +1,14 @@
 #labels Featured
-= 1.0.1 =
+= 1.0.2 =
+|| *Id* || *Description* ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=2 2] || Resolved issue off not finding classes that are annotated in jars ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=3 3] || No longer require id in the @Field annotation, assumes id is the same as the field name ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=5 5] || Made a RecordLayoutResolver to always return the same RecordLayout ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=7 7], [http://code.google.com/p/flapjack/issues/detail?id=12 12] || Created many ValueConverters for the Java primitive types ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=14 14] || Ensure the FieldDefinitions are in order by postion ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=15 15] || Created a module that supports defining fields using COBOL syntax (ex. X(9)) ||
+
+== 1.0.1 ==
 Contains some bug fixes and has a new annotation module for all the 1.5 users out there.
 
 == 1.0.0 ==
