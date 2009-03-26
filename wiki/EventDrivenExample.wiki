@@ -1,0 +1,38 @@
+# Event driven file/stream processing [http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/EventDrivenParsingTest.java SourceCode]
+
+I am assuming you know the basics of setting up RecordLayouts and RecordFactories.
+
+What we need to do is create our {{{NotifyingParseResultFactory}}} and register a Notifier with the factory.  The Notifier is the class that will be notified when a parsing event has occured.
+{{{
+        NotifyingParseResultFactory resultFactory = new NotifyingParseResultFactory();
+        resultFactory.addNotifier(new NotifyingParseResultFactory.Notifier() {
+            public void addRecord(Object obj) {
+                records.add(obj);
+            }
+
+            public void addPartialRecord(BadRecord record) {
+
+            }
+
+            public void addUnparseableRecord(BadRecord record) {
+
+            }
+
+            public void addUnresolvedRecord(BadRecord record) {
+
+            }
+        });
+}}}
+
+All we have left to do is configure the {{{RecordParser}}} for our records.
+{{{
+        RecordParserImpl recordParser = new RecordParserImpl();
+        recordParser.setParseResultFactory(resultFactory);
+
+        String records = "Joe        Schmoe     jschmoe111 #\nJimmy      Smith      jsmith     #";
+
+        LineRecordReader recordReader = new LineRecordReader(new ByteArrayInputStream(records.getBytes()));
+        ParseResult result = recordParser.parse(recordReader);
+}}}
+
+After the parsing has completed you will get a {{{ParseResult}}} this result will NOT contain any of the good/bad records.
