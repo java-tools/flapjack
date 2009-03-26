@@ -1,5 +1,9 @@
 #labels Featured
-= 1.0.2 =
+= 1.0.3 (Coming Soon) =
+|| *Id* || *Description* ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=18 18] || Event driven parsing ||
+
+== 1.0.2 ==
 || *Id* || *Description* ||
 || [http://code.google.com/p/flapjack/issues/detail?id=2 2] || Resolved issue off not finding classes that are annotated in jars ||
 || [http://code.google.com/p/flapjack/issues/detail?id=3 3] || No longer require id in the @Field annotation, assumes id is the same as the field name ||
