@@ -1,6 +1,6 @@
 # Event driven file/stream processing [http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/EventDrivenParsingTest.java SourceCode]
 
-I am assuming you know the basics of setting up RecordLayouts and RecordFactories.
+I am assuming you know the basics of setting up {{{RecordLayouts}}} and {{{RecordFactories}}}.
 
 What we need to do is create our {{{NotifyingParseResultFactory}}} and register a Notifier with the factory.  The Notifier is the class that will be notified when a parsing event has occured.
 {{{
