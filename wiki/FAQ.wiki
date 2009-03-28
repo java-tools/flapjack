@@ -1,4 +1,7 @@
 #labels Featured
+=== Why did I call the project *"[http://dictionary.reference.com/browse/flapjack flapjack]"*? ===
+When I thought about parsing a flat file I imagined a stack of pancakes on a plate. 
+
 === Why did I make the parsing and mapping to the model separate? ===
 Well, that's the way I think it should be.  Also, it allows multiple developers to use the same record layouts, but use totally different domain models. Why should someone have to duplicate the record definitions?!  This leads to mistakes re-implementing the record layouts and it's also duplication.  Plus from my experience it's sometimes hard to get others to agree on the same domain model design.
 
