@@ -7,3 +7,10 @@ Checkout the [Examples examples] on how to use flapjack.
 
 === How to access Flapjack as a Maven dependency? ===
 Checkout how to setup your pom to access the flapjack [HowToUseMavenRepo repository]
+
+=== I see there is a new release of flapjack. What features or bug fixes are in the new release? ===
+Checkout the *[ReleaseNotes release notes]*.
+
+=== I have encounted a bug or I see a missing feature. What should I do? ===
+Create an issue [http://code.google.com/p/flapjack/issues/list here].
+
