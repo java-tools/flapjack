@@ -1,1 +1,6 @@
 #labels Featured
+=== How to use Flapjack? ===
+Checkout the [Examples examples] on how to use flapjack.
+
+=== How to access Flapjack as a Maven dependency? ===
+Checkout how to setup your pom to access the flapjack [HowToUseMavenRepo repository]
