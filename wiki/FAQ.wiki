@@ -14,3 +14,5 @@ Checkout the *[ReleaseNotes release notes]*.
 === I have encounted a bug or I see a missing feature. What should I do? ===
 Create an issue [http://code.google.com/p/flapjack/issues/list here].
 
+=== How do I get access to the source code repository? ===
+The source code is actually hosted on GitHub [http://github.com/born2snipe/flapjack/tree/master here].
