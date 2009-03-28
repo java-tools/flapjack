@@ -1,0 +1,17 @@
+#labels Featured
+In order to use the Maven Repository for flapjack you can just add the following to your pom.xml file.
+
+{{{
+<repositories>
+        <repository>
+            <id>flapjack-release</id>
+            <name>Local Maven repository of releases</name>
+            <url>dav:http://flapjack.googlecode.com/svn/mvn-repo/released</url>
+        </repository>
+        <repository>
+            <id>flapjack-snapshot</id>
+            <name>Local Maven repository of snapshots</name>
+            <url>dav:http://flapjack.googlecode.com/svn/mvn-repo/snapshot</url>
+        </repository>
+</repositories>
+}}}
