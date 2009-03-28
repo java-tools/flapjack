@@ -11,6 +11,7 @@
 || [http://code.google.com/p/flapjack/issues/detail?id=7 7], [http://code.google.com/p/flapjack/issues/detail?id=12 12] || Created many value converters for the Java primitive types ||
 || [http://code.google.com/p/flapjack/issues/detail?id=14 14] || Ensure the field definitions are in order by postion ||
 || [http://code.google.com/p/flapjack/issues/detail?id=15 15] || Created a module that supports defining fields using COBOL syntax (ex. X(9)) ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=9 9] || Change {{{ValueConverter}}} to take a byte[] instead of a String ||
 
 == 1.0.1 ==
 Contains some bug fixes and has a new annotation module for all the 1.5 users out there.
