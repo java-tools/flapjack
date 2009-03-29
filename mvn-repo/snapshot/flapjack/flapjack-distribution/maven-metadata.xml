@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>flapjack</groupId>
+  <artifactId>flapjack-distribution</artifactId>
+  <version>1.0.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>1.0.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20090329154436</lastUpdated>
+  </versioning>
+</metadata>
