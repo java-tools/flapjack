@@ -15,3 +15,9 @@ In order to use the Maven Repository for flapjack you can just add the following
         </repository>
 </repositories>
 }}}
+
+=== Artifacts ===
+|| *Maven Identifier* || *Description* ||
+|| flapjack:flapjack || Core module ||
+|| flapjack:flapjack-annotation || Annotation Mapping module ||
+|| flapjack:flapjack-cobol || Cobol field definition module ||
