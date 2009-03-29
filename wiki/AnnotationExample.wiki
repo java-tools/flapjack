@@ -34,18 +34,18 @@ We now need to define our domain model that will represent this record type. The
     }
 }}}
 
-Now in order for the parser to know what domain models that are annotated you need to define a {{{AnnotatedMappedRecordFactoryResolver}}}.  This class you need to set a list of packages that contain your classes that are annotated.
+Now in order for the parser to know what domain models that are annotated you need to define a {{{AnnotatedObjectMappingStore}}}.  This class you need to set a list of packages that contain your classes that are annotated.
 {{{
-        AnnotatedMappedRecordFactoryResolver recordFactoryResolver = new AnnotatedMappedRecordFactoryResolver();
-        recordFactoryResolver.setPackages(Arrays.asList("flapjack.example"));
+        AnnotatedObjectMappingStore objectMappingStore = new AnnotatedObjectMappingStore();
+        objectMappingStore.setPackages(Arrays.asList("flapjack.example"));
 }}}
 
 All we should have left now is configuring our {{{RecordParser}}}...
 {{{
         RecordParserImpl recordParser = new RecordParserImpl();
         recordParser.setRecordLayoutResolver(new SameRecordLayoutResolver(SongRecordLayout.class));
-        recordParser.setRecordFactoryResolver(recordFactoryResolver);
-        recordParser.setRecordFieldParser(new ByteMapRecordFieldParser());
+        recordParser.setRecordFactoryResolver(new SameRecordFactoryResolver(SongFactory.class));
+        recordParser.setObjectMappingStore(objectMappingStore);
 }}}
 
 now just parse the data:
