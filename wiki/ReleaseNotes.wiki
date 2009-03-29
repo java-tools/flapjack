@@ -3,6 +3,7 @@
 || *Id* || *Description* ||
 || [http://code.google.com/p/flapjack/issues/detail?id=18 18] || Event driven parsing ||
 || [http://code.google.com/p/flapjack/issues/detail?id=8 8], [http://code.google.com/p/flapjack/issues/detail?id=16 16] || Field specific Value Converter ||
+|| N/A || Cleaned up the mapping from the fields to the domain model. ||
 
 == 1.0.2 ==
 || *Id* || *Description* ||
