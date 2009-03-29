@@ -57,16 +57,14 @@ Now since we expecting to encounter 2 different types of record layouts we will 
 We now need to define our record factories to be used:
 {{{
     private static class UserRecordFactory implements RecordFactory {
-        public Object build(Object fields, RecordLayout recordLayout) {
-            List strings = (List) fields;
-            return new User((String) strings.get(1), (String) strings.get(2), (String) strings.get(3));
+        public Object build() {
+            return new User();
         }
     }
 
     private static class AddressRecordFactory implements RecordFactory {
-        public Object build(Object fields, RecordLayout recordLayout) {
-            List strings = (List) fields;
-            return new Address((String) strings.get(1), (String) strings.get(2), (String) strings.get(3));
+        public Object build() {
+            return  new Address();
         }
     }
 }}}
@@ -85,12 +83,30 @@ Since we are expecting 2 different types of records we need to define a {{{Recor
     }
 }}}
 
+Next what we need to do is configure our mappings from our fields to our domain model
+{{{
+        ObjectMapping userMapping = new ObjectMapping(User.class);
+        userMapping.add("First Name", "firstName");
+        userMapping.add("Last Name", "lastName");
+        userMapping.add("Username", "userName");
+
+        ObjectMapping addressMapping = new ObjectMapping(Address.class);
+        addressMapping.add("Address Line", "line");
+        addressMapping.add("City", "city");
+        addressMapping.add("State", "state");
+
+        ObjectMappingStore objectMappingStore = new ObjectMappingStore();
+        objectMappingStore.add(userMapping);
+        objectMappingStore.add(addressMapping);
+}}}
+
 All we should have left now is configuring our {{{RecordParser}}}...
 {{{
         RecordParserImpl recordParser = new RecordParserImpl();
         recordParser.setRecordLayoutResolver(new BasicRecordLayoutResolver());
         recordParser.setRecordFactoryResolver(new BasicRecordFactoryResolver());
-        recordParser.setRecordFieldParser(new StringRecordFieldParser());
+        recordParser.setObjectMappingStore(objectMappingStore);
+        recordParser.setIgnoreUnmappedFields(true);
 }}}
 
 now just parse the data:
