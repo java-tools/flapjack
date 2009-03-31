@@ -8,7 +8,7 @@ Supported field definitions are: _Note: The below patterns are written using a r
 || *Decimal Formats* ||
 || {{{9+v9+}}} ||
 || {{{9([1-9][0-9]*)v9+}}} ||
-|| {{{9v9([0-9][1-9]*)}}} ||
+|| {{{9+v9([0-9][1-9]*)}}} ||
 || {{{9([1-9][1-9]*)v9([1-9][0-9]*)}}} ||
 
 || *Alpha-Numeric Formats* ||
