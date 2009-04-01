@@ -16,7 +16,7 @@ For both of these to work you must register your custom {{{ValueConverter}}}
         private String firstName;
         @Field("Last Name")
         private String lastName;
-        @Field(value = "parent", converter = YesNoValueConverter.class)
+        @Field("parent") @Converter(YesNoValueConverter.class)
         private boolean parent;
 
         // Accessor methods
