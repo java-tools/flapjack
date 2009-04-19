@@ -1,4 +1,10 @@
 #labels Featured
+*In Development*
+== 1.0.4 ==
+|| *Id* || *Description* ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=26 26] || assign an id to a RecordLayout ||
+
+*Released*
 = 1.0.3 =
 || *Id* || *Description* ||
 || [http://code.google.com/p/flapjack/issues/detail?id=18 18] || Event driven parsing ||
