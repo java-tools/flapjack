@@ -22,3 +22,6 @@ Checkout the project feeds [http://code.google.com/p/flapjack/feeds here].
 
 === How do I get access to the source code repository? ===
 The source code is actually hosted on Git Hub [http://github.com/born2snipe/flapjack/tree/master here].
+
+=== Want to be notified of updates? ===
+Follow us on [http://twitter.com/flapjackparser twitter]
