@@ -36,4 +36,7 @@
 
 [http://commons.apache.org/sandbox/flatfile/ FlatFile]
   * Still under development
- 
+
+[http://code.google.com/p/jtextfileparser JTextFileParser]
+  * Java 1.3 compliant
+  * Supports parsing delimited text files
