@@ -19,9 +19,8 @@ Create an issue [http://code.google.com/p/flapjack/issues/list here].
 
 === How can I be notified of updates or new releases? ===
 Checkout the project feeds [http://code.google.com/p/flapjack/feeds here].
+Follow us on [http://twitter.com/flapjackparser twitter]
 
 === How do I get access to the source code repository? ===
 The source code is actually hosted on Git Hub [http://github.com/born2snipe/flapjack/tree/master here].
 
-=== Want to be notified of updates? ===
-Follow us on [http://twitter.com/flapjackparser twitter]
