@@ -48,3 +48,9 @@
   * Eclipse plugin support
 
 [http://sourceforge.net/projects/flat-bean Flat Bean]
+
+[http://jfilehelpers.com/index_en.php JFileHelpers]
+  * Java 1.5 compliant
+  * Supports parsing and build of delimited and fixed format files
+  * Configured through Annotations
+  * Supports text files
