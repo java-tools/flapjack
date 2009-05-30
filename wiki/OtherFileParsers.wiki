@@ -40,3 +40,9 @@
 [http://code.google.com/p/jtextfileparser JTextFileParser]
   * Java 1.3 compliant
   * Supports parsing delimited text files
+
+[http://flattree.sourceforge.net/ Flat Tree]
+  * Java 1.5 compliant
+  * Supports parsing and building of CSVs, fixed format, and mixed
+  * Configured through XML
+  * Eclipse plugin support
