@@ -46,3 +46,5 @@
   * Supports parsing and building of CSVs, fixed format, and mixed
   * Configured through XML
   * Eclipse plugin support
+
+[http://sourceforge.net/projects/flat-bean Flat Bean]
