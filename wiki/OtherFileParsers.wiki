@@ -52,3 +52,11 @@
   * Supports parsing and build of delimited and fixed format files
   * Configured through Annotations
   * Supports text files
+
+[http://jrecord.sourceforge.net/ JRecord]
+  * Read and write files of length based records (both fixed length records and Length field based records).
+  * Read and write CSV files.
+  * Read and Write Flat Fixed width files (Text and Binary) via either a Xml-Record-Layout or a Cobol Copybook..
+  * Read and write XML files (via StAX parser).
+  * Common IO routines across all File Types (XML, CSV, Fixed field Width).
+  * Support for various Flat file formats (Fixed, Delimited, Length based Files (i.e. Mainframe VB). 
