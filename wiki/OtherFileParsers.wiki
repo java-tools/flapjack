@@ -43,7 +43,7 @@
 
 [http://flattree.sourceforge.net/ Flat Tree]
   * Java 1.5 compliant
-  * Supports parsing and building of CSVs, fixed format, and mixed
+  * Supports parsing and building of CSVs, fixed format, and mixed text files
   * Configured through XML
   * Eclipse plugin support
 
