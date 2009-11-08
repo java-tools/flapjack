@@ -6,6 +6,8 @@
 || [http://code.google.com/p/flapjack/issues/detail?id=26 26] || assign an id to a record layout ||
 || [http://code.google.com/p/flapjack/issues/detail?id=28 28] || AbstractRecordLayout is not calculating the length properly ||
 || [http://code.google.com/p/flapjack/issues/detail?id=31 31] || RegEx patterns for locating annotated classes ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=34 34] || Handling null values properly for Java 1.4 ||
+
 
 *Released*
 = 1.0.3 =
