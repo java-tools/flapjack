@@ -7,13 +7,14 @@
 || [http://code.google.com/p/flapjack/issues/detail?id=28 28] || AbstractRecordLayout is not calculating the length properly ||
 || [http://code.google.com/p/flapjack/issues/detail?id=31 31] || RegEx patterns for locating annotated classes ||
 || [http://code.google.com/p/flapjack/issues/detail?id=34 34] || Handling null values properly for Java 1.4 ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=16 16] || COBOL data type auto-conversion ||
 
 
 *Released*
 = 1.0.3 =
 || *Id* || *Description* ||
 || [http://code.google.com/p/flapjack/issues/detail?id=18 18] || Event driven parsing ||
-|| [http://code.google.com/p/flapjack/issues/detail?id=8 8], [http://code.google.com/p/flapjack/issues/detail?id=16 16] || Field specific Value Converter ||
+|| [http://code.google.com/p/flapjack/issues/detail?id=8 8] || Field specific Value Converter ||
 || [http://code.google.com/p/flapjack/issues/detail?id=23 23] || Illegal COBOL field definitions ||
 || [http://code.google.com/p/flapjack/issues/detail?id=22 22] || Clean up the field specific ValueConverter for the annotations ||
 || N/A || Cleaned up the mapping from the fields to the domain model. ||
