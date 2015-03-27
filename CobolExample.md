@@ -1,0 +1,30 @@
+[Source Code](http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/CobolTest.java)
+
+Supported field definitions are: _Note: The below patterns are written using a regular expression._
+| **Integer Formats** |
+|:--------------------|
+| `9+` |
+| `9+([1-9][0-9]*)` |
+
+| **Decimal Formats** |
+|:--------------------|
+| `9+v9+` |
+| `9([1-9][0-9]*)v9+` |
+| `9+v9([0-9][1-9]*)` |
+| `9([1-9][1-9]*)v9([1-9][0-9]*)` |
+
+| **Alpha-Numeric Formats** |
+|:--------------------------|
+| `X+` |
+| `X([1-9][0-9]*)` |
+
+Example of a COBOL record layout:
+```
+    private static class LoanRecordLayout extends AbstractCobolRecordLayout {
+        protected void defineFields() {
+            cobolField("SSN", "9(9)");
+            cobolField("NAME", "X(30)");
+            cobolField("AMOUNT", "9(5)");
+        }
+    }
+```

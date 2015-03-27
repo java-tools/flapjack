@@ -1,0 +1,71 @@
+# Processing a file/stream that contains same record type multiple times. [SourceCode](http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/SameRecordTypeTest.java)
+
+### Record Specification ###
+| **Name** | **Position** | **Length** |
+|:---------|:-------------|:-----------|
+| First Name | 0 | 11 |
+| Last Name | 11 | 11 |
+| Username | 22 | 11 |
+| Terminator | 33 | 1 |
+
+The first thing I need to do is define my `RecordLayout`:
+```
+    private static class UserRecordLayout extends SimpleRecordLayout {
+        private UserRecordLayout() {
+            field("First Name", 11);
+            field("Last Name", 11);
+            field("Username", 11);
+            field("Terminator", 1);
+        }
+    }
+```
+
+When you call the ` field() ` method this assumes you are defining the fields in order, and is calculating the position of the next field for you.
+
+The next thing I need to do is create a `RecordFactory` for to create our domain object:
+```
+// Our domain model representing our record
+public class User {
+    private String firstName, lastName, userName;
+    // Accessor methods below
+}
+
+// The record factory to create our User object
+    private static class UserRecordFactory implements RecordFactory {
+        public Object build() {
+            return new User();
+        }
+    }
+```
+
+Next what we need to do setup our mapping from our fields to our domain model.
+```
+        ObjectMapping userMapping = new ObjectMapping(User.class);
+        userMapping.add("First Name", "firstName");
+        userMapping.add("Last Name", "lastName");
+        userMapping.add("Username", "userName");
+
+        ObjectMappingStore objectMappingStore = new ObjectMappingStore();
+        objectMappingStore.add(userMapping);
+```
+
+All we have left to do is configure the `RecordParser` for our records.
+```
+        RecordParserImpl recordParser = new RecordParserImpl();
+        recordParser.setRecordLayoutResolver(new SameRecordLayoutResolver(UserRecordLayout.class));
+        recordParser.setRecordFactoryResolver(new SameRecordFactoryResolver(UserRecordFactory.class));
+        recordParser.setObjectMappingStore(objectMappingStore);
+        recordParser.setIgnoreUnmappedFields(true);
+```
+
+
+After we have completed our configuration, all you should do know is actually parse our records.
+```
+String records = "Joe        Schmoe     jschmoe111 #\nJimmy      Smith      jsmith     #";
+
+LineRecordReader recordReader = new LineRecordReader(new ByteArrayInputStream(records.getBytes()));
+ParseResult result = recordParser.parse(recordReader);
+```
+I am using the `LineRecordReader` because I know the records are delimited by line-endings.
+
+After the parsing has completed you will get a `ParseResult` this contains all the records parsed.  You can access your records by calling `result.getRecords()` which returns you a List of `User` objects.

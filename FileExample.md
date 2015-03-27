@@ -1,0 +1,9 @@
+[Source](http://github.com/born2snipe/flapjack/blob/2ad6f5f376aaf06264e9b51576bf068754afd715/flapjack-example/src/test/java/flapjack/example/FileTest.java)
+
+```
+                FlatFileParser parser = new FlatFileParser();
+		parser.setRecordReaderFactory(new LineRecordReaderFactory());
+		parser.setRecordParser(recordParser);
+
+		ParseResult result = parser.parse(file);
+```

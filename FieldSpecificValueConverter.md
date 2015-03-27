@@ -1,0 +1,36 @@
+[Annotation Example](http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/AnnotationFieldSpecificValueConverterTest.java)
+
+[Bean Example](http://github.com/born2snipe/flapjack/tree/master/flapjack-example/src/test/java/flapjack/example/BeanFieldSpecificValueConverterTest.java)
+
+For both of these to work you must register your custom `ValueConverter`
+```
+        TypeConverter typeConverter = new TypeConverter();
+        typeConverter.registerConverter(new YesNoValueConverter());
+```
+
+### Annotation Example ###
+```
+    @Record(PersonRecordLayout.class)
+    private static class Person {
+        @Field("First Name")
+        private String firstName;
+        @Field("Last Name")
+        private String lastName;
+        @Field("parent") @Converter(YesNoValueConverter.class)
+        private boolean parent;
+
+        // Accessor methods
+    }
+
+```
+
+### Bean Example ###
+```
+        /**
+         * Configure the ObjectMapping from the record data to the domain objects
+         */
+        ObjectMapping userMapping = new ObjectMapping(Person.class);
+        userMapping.add("First Name", "firstName");
+        userMapping.add("Last Name", "lastName");
+        userMapping.add("Parent", "parent", YesNoValueConverter.class);
+```
